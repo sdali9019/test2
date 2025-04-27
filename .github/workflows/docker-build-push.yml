@@ -3,8 +3,8 @@ name: Build and Push Docker Image
 on:
   push:
     branches:
-      - main   # run when pushing to main branch
-  workflow_dispatch: # allow manual trigger from GitHub UI
+      - main
+  workflow_dispatch:
 
 jobs:
   build-and-push:
@@ -28,4 +28,4 @@ jobs:
       with:
         context: .
         push: true
-        tags: sdali9019/github-action:1.0
+        tags: sdali9019/github-action:latest
